@@ -22,4 +22,5 @@ public class TopController {
 		model.addAttribute("loginForm", loginForm);
 		return "/top";
 	}
+
 }
