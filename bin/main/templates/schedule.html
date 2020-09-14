@@ -15,16 +15,16 @@
     <br/>
 
     <h3>日付</h3>
-    	<p th:text="*{nowLocalDate}"></p>
+    	<p th:text="*{createdDate}" name="createdDate"></p>
 
  	<h3>開始時刻</h3>
- 		<input type="time" name="startTime"/>
+ 		<input type="time" name="scheduleStartTime"/>
 
  	<h3>終了時刻</h3>
- 		<input type="time" name="endTime"/>
+ 		<input type="time" name="scheduleEndTime"/>
 
     <h3>メモ</h3>
-    	<textarea name="memo" th:text="*{memo}" cols="20" rows="5"></textarea>
+    	<textarea name="context" th:text="*{context}" cols="20" rows="5"></textarea>
 
     <p><input type="submit" value="スケジュールを登録する" /></p>
 
