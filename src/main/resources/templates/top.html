@@ -1,13 +1,23 @@
-<!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org"
-      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8" />
-    <title>メニュー画面</title>
+<title>calendar demo</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel='stylesheet' href='webjars/fullcalendar/3.5.1/dist/fullcalendar.css' />
+<script src="webjars/jquery/2.0.3/jquery.min.js"></script>
+<script src='webjars/moment/2.19.1/min/moment.min.js'></script>
+<script src='webjars/fullcalendar/3.5.1/dist/fullcalendar.js'></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('#calendar').fullCalendar({
+      events: {
+        url : '/api/event/all'
+      }
+    });
+  });
+</script>
 </head>
 <body>
-<h2>こんにちは</h2>
-    <p>こんにちは
-    <p><a th:href="@{'/top/schedule'}">schedule登録画面へのリンク</a></p>
+  <div id='calendar'></div>
 </body>
 </html>
