@@ -71,7 +71,6 @@ public class RegistController {
 			checkResult = false;
 			result.rejectValue("password", "未入力の項目があります", "未入力の項目があります");
 		}
-
 		return checkResult;
 	}
 }
