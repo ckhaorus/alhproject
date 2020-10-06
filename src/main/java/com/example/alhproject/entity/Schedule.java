@@ -8,6 +8,7 @@ import lombok.Setter;
 @Getter
 @Setter
 public class Schedule {
+	private Integer id;
 	private String title;
 	private String context;
 	private Integer userId;
@@ -24,5 +25,8 @@ public class Schedule {
 		this.createdDate = createdDate;
 		this.scheduleStartTime = scheduleStartTime;
 		this.scheduleEndTime = scheduleEndTime;
+	}
+
+	public Schedule() {
 	}
 }

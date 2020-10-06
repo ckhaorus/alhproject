@@ -20,4 +20,17 @@
 			#{scheduleEndTime}
 		)
     </insert>
+
+    <select id="selectAll" resultType="com.example.alhproject.entity.Schedule">
+		select
+			id,
+			title,
+			context,
+			user_id as userId,
+			created_date as createdDate,
+			schedule_start_time as scheduleStartTime,
+			schedule_end_time as scheduleEndTime
+		from
+			schedule
+    </select>
 </mapper>

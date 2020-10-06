@@ -43,6 +43,8 @@ dependencies {
 	compile group: 'org.webjars.bower', name: 'moment', version: '2.19.1'
 	// https://mvnrepository.com/artifact/org.webjars/jquery
 	compile group: 'org.webjars', name: 'jquery', version: '2.0.3'
+	// https://mvnrepository.com/artifact/com.github.mygreen/super-csv-annotation
+	compile group: 'com.github.mygreen', name: 'super-csv-annotation', version: '2.2'
 }
 
 test {

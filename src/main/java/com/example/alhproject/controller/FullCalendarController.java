@@ -25,14 +25,13 @@ public class FullCalendarController {
         try {
             List<ScheduleManagementForm> events = new ArrayList<ScheduleManagementForm>();
             ScheduleManagementForm event = new ScheduleManagementForm();
-            event.setTitle("first event");
+            event.setTitle("たいとる");
             event.setStart("2020-09-16");
             events.add(event);
 
             event = new ScheduleManagementForm();
-            event.setTitle("second event");
+            event.setTitle("おはよう");
             event.setStart("2020-09-18");
-            event.setEnd("2020-09-20");
             events.add(event);
 
             // FullCalendarにエンコード済み文字列を渡す
